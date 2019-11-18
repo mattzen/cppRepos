@@ -107,8 +107,6 @@ struct spawnPart{
 	int x,y;
 
 };
-
-
 // The main window class name.j
 static string szWindowClass = "win32app";
 
@@ -198,7 +196,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
     // nCmdShow: the fourth parameter from WinMain
     ShowWindow(hWnd,
         nCmdShow);
-    
+    UpdateWindow(hWnd);
 
 	//init snake
 
@@ -207,7 +205,8 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	Snake1.addPart(70,50);
 
 
-	
+
+
     // Main message loop:
     MSG msg;
 
